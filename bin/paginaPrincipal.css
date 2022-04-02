@@ -1,0 +1,642 @@
+*{
+    margin-top: 0px;
+    box-sizing: border-box;
+}
+html {
+    min-height: 100%;
+    position: relative;
+}
+body {/*lo que está abajo del navegador:formato,de letra y marguen*/
+    font-family: sans-serif;
+    background:rgb(255, 255, 255);
+    padding: 6em 1em 0em;
+    background-image: url(/pagina/img/pexels-max-andrey-1068989.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* backdrop-filter: blur(3px) brightness(60%); */
+    background-attachment: fixed;
+    width: 100%;
+    margin: 0;
+}
+header.header {/*cuerpo del navegador*/
+    font-family:'Exo 2', sans-serif;
+    justify-content: space-between;/* izquierda logo, derecha herramientas*/
+    font-weight: bold;
+    background-color: rgb(0, 0, 0) !important;
+    box-shadow: -10px 0px 1em 1em !important;
+    height: 4.2em;
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+nav.nav {/*navegador: */
+    display:flex;/*alinear y mover a la derecha*/
+}
+.logo {
+    background-color:rgb(0, 0, 0);
+    height:4.5em;
+    padding: 0em 0em 0em ;/*centrar logo*/
+    line-height: 3em;/*centro Y*/
+    margin-left: 1em;
+    position:fixed;
+}
+.nav-menu {/*Herramientas General:  separar del lado cuerpo,quitar puntos de lista*/
+    display: flex;/*alinear*/
+    margin-right: 0em;/* margen herramientas izquierda*/
+    list-style: none; 
+}
+.nav-menu-list{
+    height: 0em;
+}
+.nav-name{/* las Herramientas:tamaño,margen centro Y*/
+    font-size: 1.2em;/*tamaño de herramientas*/
+    padding: 0 .5em; /* distancia de herramientas entre ellos*/
+    line-height:5.3em; /*centro Y*/
+}
+a.nav-name {/**letras de herramientas */
+    color:white;
+    text-decoration: none;/*quitar linea de abajo letras*/
+}
+.cuenta{
+    font-size: 2em;
+    line-height: 2.9em;
+}
+i{/*iconos*/
+    margin-right: .2em;/*separa entre el texto*/
+}
+.nav-name:hover{
+    color:aqua;
+    background:none;
+    background-color:rgb(8, 8, 8);
+    padding: 2.3em .5em .2em;
+    margin: .01em;
+    line-height:5.5em;
+}
+.cuenta:hover{
+    padding: 2em .5em .04em;
+    margin: .01em;
+    line-height:3.1em; 
+    
+}
+.inicio:hover {/*colores de fondo los texto menu */
+    color: rgb(255, 51, 0);
+    margin: 0em 0em 0em 0em;  
+
+}
+.tienda:hover {
+    color:rgb(238, 255, 0); 
+}
+.productores:hover {
+    color:rgb(255, 102, 0); 
+}
+.contacto:hover {
+    color:rgb(0, 153, 255);
+}
+.cuenta:hover {
+    color: rgb(30, 255, 0);
+}
+.nav-boton{
+    background-color:rgb(0, 0, 0);
+    height: 2.5em;
+    font-size:1.5em;
+    line-height: 4.5em;
+    padding: 0 .7em;
+    color:white;
+    background:none;
+    border:none;
+    display:none;
+    cursor:pointer;/*me aparezca la mano en vez de la flecha*/
+    display:none;
+}
+
+/*/X/X/X/X/X/X/X/X/X/X/X/X/X/ PIE DE PAGINA!/X/X/X/X/X/X/X/X/X/X/X/*/
+footer{
+    background:rgb(0, 0, 0);
+    /* max-width: 1920px; */
+    width:100%;
+    height:18em;
+    margin-top: .9em;
+    padding: 2em 0em 0em;
+    box-shadow:0px 15px 5px 20px;
+    flex-wrap: wrap;
+    bottom: 0;
+
+}
+.container-flooter{/*el fondo del contenido*/
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 70%;
+    padding-top:9px;
+    flex-wrap: wrap;
+}
+.subcontainer-footer{
+    display:flex;
+    flex-wrap: wrap;
+}
+.title{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    background:rgb(0, 0, 0);
+    font-size: 20px;
+    color:azure;
+    display:inline-block;
+    padding:10px 1px 5px;
+    margin-left: 45px;
+    margin-top: -17px;
+}
+ul{
+    list-style: none;
+}
+.contact{/*modificar las columnas de tamaño, dimension ect*/
+    width: 7em;
+    padding: 2px 0px 0 0px;
+    margin-left: 5%;
+    position: relative;
+}
+.contact h4{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-size: 19px;
+    color:rgb(255, 255, 255);
+    text-transform:capitalize;
+    font-weight: 500;
+    position: relative;
+    
+}
+footer h4.ch:hover{
+    color: #0be881;
+    transition: all 0.3s ease;
+}
+footer h4.noak:hover{
+    color: #EA2027;
+    transition: all 0.3s ease;
+}
+footer h4.aled:hover{
+    color:#be2edd;
+    
+}
+.logo2{
+    background:rgb(255, 0, 0);
+    image-rendering: pixelated;
+    width: 6.4em;
+    list-style: none;
+    padding: .1em;
+    margin-bottom:-.6em;
+    margin-top: 0em;
+}
+.s{
+    margin-top:2em;
+}
+.contact h4::before{/*linea girs*/
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(56, 53, 53);
+    height: 2px;
+    box-sizing:border-box;
+    width: 50px; 
+    margin-bottom: 5px;
+}
+.contact ul{
+    margin-top: 20px;
+    /* position: fixed; */
+}
+.contact ul li:not(:last-child){
+    margin-bottom:5px;
+}
+.contact ul li a{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2em;
+    /* text-transform:capitalize; */
+    background-color:rgb(0, 0, 0);
+    text-decoration:none;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    display:block;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+ul li a i{
+    margin-right: 10px;
+}
+.contact ul li a.facebook:hover{
+    color: #0652DD;
+    background-color:rgb(14, 13, 13);
+    border-radius: 10px;
+    padding: 0px 0px 0px 7px;
+    
+}
+.contact ul li a.instagram:hover{
+    color:#FFC312;
+    background-color:black;
+    border-radius: 10px;
+    padding: 0px 0px 0px 7px;
+    
+}
+.contact ul li a.twitter:hover{
+    color: #00a8ff;
+    background-color:black;
+    border-radius: 10px;
+    padding: 0px 0px 0px 7px;
+}
+.contact ul li a.correo:hover{
+    color: #487eb0;
+    background-color:black;
+    border-radius: 10px;
+    padding: 0px 0px 0px 7px;   
+}
+.description{
+    color:white;
+    background:rgb(0, 0, 0);
+    padding: 12px 0px 0px;
+    font-size:13px;
+    margin-left:66%;
+    margin-right:2em;
+    position: absolute;
+}
+.cuerpo-servicios{
+    background-color:rgb(0, 0, 0);
+    margin-top:2em;
+    height:40px;
+    line-height: 40px;
+}
+.servicios{
+    display:inline-block;
+}
+ul li a.FAQs,.support,.more{
+    color:white;
+    text-decoration: none;
+    margin-left: .2em;
+}
+.container-iphone{
+    display:none;
+}
+.copyright{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 12px;
+    display: block;
+    float: right;
+    color: white;
+    margin: 30px 10px 10px 20px;
+}
+.copyright i{
+    font-size: 9px;
+    margin-left: 2px;
+}
+/*/////////////////////RESPONSIVE DESING///////////////////*/
+/*///////////////////////////////////////////////////////////////*/
+@media (min-width: 1400px){/*APADATADOR PARA RESOLUCIONES GRANDES*/
+    body{max-width:2000px;
+        width: 100%;
+        height: 89%;
+    }
+}
+@media screen and (max-width:990px){
+
+    .logo {
+        background-color:rgb(0, 0, 0);
+        height: 4.5em;
+        width:30%;
+        padding: 0em 0em 0em ;/*centrar logo*/
+        line-height: 3em;/*centro Y*/
+        margin-left: 1em;
+        margin-top:0%;
+        position:fixed;
+    }
+    .nav-name{/* las Herramientas:tamaño,margen centro Y*/
+        font-size: 130%;/*tamaño de herramientas*/
+        padding: 0 .1em; /* distancia de herramientas entre ellos*/
+        line-height:5em; /*centro Y*/
+    }
+    .cuenta{
+        font-size: 1.7em;
+        line-height: 4em;
+    }
+    .contact ul li a{
+        font-size:1.1em;
+    }
+    .contact{/*modificar las columnas de tamaño, dimension ect*/
+        width:8em;
+        padding: 2px 0px 0 0px;
+        margin-left: 7%;
+        position: relative;
+    }
+    .contact ul li a{
+        font-size:1.3em;
+    }
+    .description{
+        color:white;
+        background:rgb(0, 0, 0);
+        padding: 12px 0px 0px;
+        font-size:13px;
+        margin-left:66%;
+        margin-right:2em;
+        position: fixed;
+    }
+}
+@media screen and (max-width:790px){
+
+    .logo {
+        background-color:rgb(0, 0, 0);
+        height: 3em;
+        width:29%;
+        padding: 0em 0em 0em ;/*centrar logo*/
+        line-height: 1em;/*centro Y*/
+        margin-left: 1em;
+        margin-top:14px;
+        position:fixed;
+        display:flex;
+    }
+    .nav-name{/* las Herramientas:tamaño,margen centro Y*/
+        font-size: 115%;/*tamaño de herramientas*/
+        padding: 0 .2em; /* distancia de herramientas entre ellos*/
+        line-height:5.5em; /*centro Y*/
+    }
+    .cuenta{
+        font-size: 1.7em;
+        line-height: 4em;
+    }
+    .contact ul li a{
+        font-size:1.1em;
+    }
+    .contact{/*modificar las columnas de tamaño, dimension ect*/
+        width: 7em;
+        padding: 2px 0px 0 0px;
+        margin-left: 7%;
+        position: relative;
+    }
+    .contact ul li a{
+        font-size:1.2em;
+    }
+}
+@media (max-width:730px){/*HEAD MODO IPHONE*/
+
+    body {/*lo que está abajo del navegador:formato,de letra y marguen*/
+        padding-top: 6em;
+        background-image: url(/pagina/img/pexels-daian-gan-1581363.jpg);
+        background-repeat: no-repeat;
+        flex-wrap: wrap;
+    }
+    .header {/*cuerpo del navegador*/
+        flex-wrap: wrap;
+    }
+    .logo {
+        /* margin-left: 6em; */
+        background-color:rgb(0, 0, 0);
+        height:3.5em;
+        margin-top:10px;
+        line-height: 5em;/*centro Y*/
+        text-decoration: none;/*linea subrayada no*/
+
+        position: relative;
+        width:100%;
+        left:4em;
+        margin-right: -3%;
+    }
+    .nav-menu {/*Herramientas General:  separar del lado cuerpo,quitar puntos de lista*/
+        flex-direction: column;/*columna*/
+        align-items: center;/*central letras*/
+        margin-right: 0em;/* margen herramientas izquierda*/
+        background-color:rgb(0, 0, 0);
+        position:fixed;
+        left: 0em;
+        top: 4.2em;
+        width: 100%;
+        padding: 0em;
+        flex-wrap: wrap;
+        height: calc(100% - 1rem);
+        overflow-y:auto; /*Movimiento a de up, a down*/
+        display: block;
+        text-align: center;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-name{/* las Herramientas:tamaño,margen centro Y*/
+        font-size: 2em;/*tamaño de h erramientas*/
+        line-height:3.3em; /*centro Y*/
+    }
+    .nav-menu-list{
+        margin-top: 1rem;
+        height: 6em;
+    }
+    .cuenta{
+        font-size: 3em;
+        /* line-height: 2.9em; */
+        margin-left: .2em;
+        padding-bottom: 8rem;
+    }
+    .nav-boton{
+        background-color:rgb(0, 0, 0);
+        margin-top: 10px;
+    }
+    .fa-bars,.boton{
+        display:flex !important;
+        margin-top: 20px;
+    }
+    .nav-boton:active{
+        background-color:rgba(59, 56, 56, 0.185);
+        padding-top:1.5px;
+    }
+    i{/*iconos*/
+        margin-right: .3em;/*separa entre el texto*/
+    }
+    /* FONDO DE HERRAMIENTAS*/
+    .inicio:hover {
+        background-color:rgb(0, 0, 0);
+        padding: 2em 1em 1em 1em;
+        margin: .01em;
+        line-height:3.3em; 
+    }
+    .tienda:hover {
+        background-color:rgb(0, 0, 0);
+        padding: 1.3em 1em 1em 1em;
+        margin: .01em;
+        line-height:3.3em; 
+    }
+    .productores:hover {
+        background-color:rgb(0, 0, 0);
+        padding: 1.3em 0em 1em 0em;
+        margin: .01em;
+        line-height:3.3em; 
+    }
+    .contacto:hover {
+        background-color:rgb(0, 0, 0);
+        padding: 1.3em 1em 1em 1em;
+        margin: .01em;
+        line-height:3.3em; 
+    }
+    .cuenta:hover{
+        background-color:rgb(0, 0, 0);
+        padding: 1.2em 0em 0px .2em;
+        margin: .01em;
+        margin-left: .01em;
+        line-height:3.3em;
+        padding-bottom: 8rem;
+    } 
+    .nav-boton{
+        display: block;
+    }
+    .nav-menu_visible{
+        left: 0em;
+        
+    }
+    .nav-boton:focus:not(:focus-visible) {
+        outline: none;
+    }
+}
+/*X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X*/
+/* RESPONSIVE DESING (FOOTER PIE DE PAGINA MODO IPHONE)*/
+@media (max-width:730px){
+    footer{
+    margin-top: .4em;
+    flex-wrap: wrap;
+    width: 100%;
+    height:65em;
+    /* max-width: 58em; */
+    background-color:#000000;
+}
+.container-flooter{/*el fondo del contenido escritorio*/
+    display: none;
+    background-color:#00a8ff;
+}
+/*X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X*/
+.container-iphone{
+    display:block;
+    color:#ffffff;
+    background:#00c3ff;
+    margin-top: 0px;
+    height:54em;
+}
+.subcontainer-iphone{
+    background:#d9ff00;
+    height:34em;
+}
+.columna-1{
+    background:rgb(0, 0, 0);
+    height:54em !important;
+    padding-top: 1em;/*mover columna*/
+    display:block;
+}
+.name{
+    color:rgb(255, 255, 255);
+    font-size:1.8em;
+    width:97%;
+    text-align:center;
+    margin-top: 1.2em;
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+.img-thecoast-iphone{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    display:block;
+    background-color: rgb(136, 255, 0);
+    width:60%;
+}
+.redes-social{
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: -16px;
+    margin-right: -16px;
+    background-color:rgb(0, 0, 0);
+}
+.iconos{
+    color:rgb(255, 255, 255);
+    font-size: 260%;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+.columna-2{
+    margin-top: 25%!important;
+    height: 2.5rem!important;
+    background-color:rgb(0, 0, 0);
+}
+.img-iphone2{
+    margin-top:9%;
+    width: 10em;
+    margin-left:auto;
+    margin-right: auto;
+    display:block;
+}
+.columna-3{
+    text-align:center;
+    background:#000000;
+    margin-top:0%;
+    padding:1em .9em 0 .9em;
+    margin-right: 1px;
+}
+.columna-4{
+    background:#000000;
+    margin: 0em 0em;
+    padding: 1em 0em .3em 1em;
+    margin-top: 2.8em;
+    justify-content:space-between;
+    list-style: none;
+    display: flex;
+}
+.link{
+    color:rgb(255, 145, 0);
+    margin: .1em;
+}
+.copyrightt{
+    background-color:rgb(0, 0, 0);
+    margin-right:2em;
+    float: right;
+}
+
+.iconos-footer-iphone{
+    background-color:#c59f9f;
+    width: 20px;
+    display:flex;
+    margin:6px 0 0 0;
+    display:none;
+}
+.copyright{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 12px;
+    display:none;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+    margin: 30px 10px 10px 20px;
+}
+.copyright i{
+    font-size: 9px;
+    margin-left: 2px;
+}
+ul li a.FAQs{
+    display:block;
+    color:rgb(255, 255, 255);
+    position: absolute;
+    text-decoration: none;
+    min-height: 20px;
+    bottom: 10px;
+    left: 15;
+}
+/**EFECTO  AL PRECIONAR*/
+.ico-youtube:active{
+    color:#ff1900;
+    transition: left 0.3s
+}
+.ico-facebook:active{
+    color:#0652DD;
+    transition: left 0.3s
+}
+.ico-instagram:active{
+    color:#ffef12;
+    transition: left 0.3s
+}
+.ico-twitter:active{
+    color: #00a8ff;
+    transition: left 0.3s
+}
+.ico-correo:active{
+    color: #487eb0;
+    transition: left 0.3s
+}
+}

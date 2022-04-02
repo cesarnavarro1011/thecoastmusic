@@ -1,0 +1,233 @@
+:root {
+    --color-dark: #000000;
+    --color-dark-x: #2d343f;
+    --color-dark-xx: #18181a;
+    --color-light: #ffffff;
+    --color-grey: #f5f6f8;
+}
+.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,
+.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,
+.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,
+.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,
+.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,
+.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,
+.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,
+.col-sm-8,.col-sm-9,.col-sm-auto,.col-xl,.col-xl-1,
+.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-2,.col-xl-3,
+.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,
+.col-xl-9,.col-xl-auto{position:static;}
+@-ms-viewport{
+    width:device-width
+}
+html{
+    list-style: none; 
+    text-decoration: none;/*quitar linea de abajo letras*/
+}
+body{
+    margin:0;
+    font-family:BlinkMacSystemFont,"Segoe UI",Roboto;
+    list-style: none; 
+    text-decoration: none;/*quitar linea de abajo letras*/
+}
+header{
+    color:#000000;
+    /* position: fixed; */
+}
+footer{
+    color:#000000;
+}
+.s{ /* footer del la columna del logo */
+    margin-top:2.6em !important;
+}
+a.terminos-condiciones{
+    color:white !important;
+    text-decoration: none;
+}
+.fal{
+    font-size: 32px;
+    margin-left: 1mm;
+}
+button.btn{
+    margin-top:-.2em;
+}
+.mb-2{
+    margin-top:-1.5rem;
+}
+/* ////////////////////////////////////////////////////////// */
+.bg-light {
+    
+    background-color: var(--color-light)!important;
+}
+.bg-dark {
+    background-color: var(--color-dark)!important;
+}
+.p-6 {
+    padding: 4rem 7rem;
+}
+.contact-box {
+    margin-top:5rem;
+    padding-left: auto;
+    padding-right: auto;
+    margin-bottom: 5rem;
+}
+.form-control:focus{
+    color:white;
+    background:  #18181a;
+    outline: none!important;
+}
+.btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+}
+.btn-outline-dark {
+    border: 2px solid var(--color-dark-xx);
+}
+.form-control {
+    background-color: var(--color-dark-xx);
+    border: 2px solid var(--color-dark-xx);
+    border-radius: .2rem;
+    padding: 1.5rem 1rem;
+}
+.align-self-center{
+    padding-left: 10mm;
+}
+.register-bg {
+    background-image: url('/pagina/img/img-cuenta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: 115% 100%;
+}
+.testiomonial {
+    bottom: 10px
+}
+.font-weight-bold{
+    color:rgb(255, 255, 255);
+}
+.presentacion,.presentacion2,.heybro{
+    position: sticky;
+}
+.fa-thin{
+    color:white;
+}
+.mb-3{
+    color:white;
+}
+.form-check,.form-check-input{
+    position:static;
+}
+@media (max-width: 1200px) { 
+    .register-bg {
+        min-height: 100vh;
+    }
+    .align-self-center{
+        margin-left: 20mm;
+    }
+    .register-bg {
+        background-image: url('/pagina/img/img-cuenta.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 90vh;
+        background-size: 100% 150%;
+    }
+    .icono{
+        color:rgb(255, 255, 255);
+        font-size: 175%;
+        width: 15%;
+        padding: 5px 0px 5px 18px;
+    }
+    .ico-youtube:active{
+        color:#ff1900;
+        transition: left 0.3s
+    }
+    .ico-facebook:active{
+        color:#0652DD;
+        transition: left 0.3s
+    }
+    .ico-instagram:active{
+        color:#FFC312;
+        transition: left 0.3s
+    }
+    .ico-twitter:active{
+        color: #00a8ff;
+        transition: left 0.3s
+    }
+    .ico-correo:active{
+        color: #487eb0;
+        transition: left 0.3s
+    }
+}
+@media (max-width: 575.98px) {
+    .p-6 {
+        padding: 2rem;
+    }
+    .contact-box {
+        padding: 0;
+    }
+    .align-self-center{
+        margin-left: 2mm;
+    }
+    .register-bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 60vh;
+        background-size: 100% 150%;
+    }
+    .width-100 {
+        width: 100%;
+    }
+    .contact-box{
+        margin-top:60px;
+    }
+    .nav-menu{
+        height: calc(91% - 1rem)!important;
+    }
+    .icono{
+        color:rgb(255, 255, 255);
+        font-size: 175%;
+        width: 15%;
+        padding: 5px 0px 5px 18px;
+    }
+    .ico-youtube:hover{
+        color:#ffffff;
+        transition: left 0.3s
+    }
+    .ico-facebook:hover{
+        color:#ffffff;
+        transition: left 0.3s
+    }
+    .ico-instagram:hover{
+        color:#ffffff;
+        transition: left 0.3s
+    }
+    .ico-twitter:hover{
+        color: #ffffff;
+        transition: left 0.3s
+    }
+    .ico-correo:hover{
+        color: #ffffff;
+        transition: left 0.3s
+    }
+    .ico-youtube:active{
+        color:#ff1900;
+        transition: left 0.3s
+    }
+    .ico-facebook:active{
+        color:#0652DD;
+        transition: left 0.3s
+    }
+    .ico-instagram:active{
+        color:#FFC312;
+        transition: left 0.3s
+    }
+    .ico-twitter:active{
+        color: #00a8ff;
+        transition: left 0.3s
+    }
+    .ico-correo:active{
+        color: #487eb0;
+        transition: left 0.3s
+    }
+}
