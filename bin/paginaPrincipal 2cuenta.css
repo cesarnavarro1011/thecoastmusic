@@ -10,7 +10,7 @@ body {/*lo que está abajo del navegador:formato,de letra y marguen*/
     font-family: sans-serif;
     background:rgb(255, 255, 255);
     padding: 6em 1em 0em;
-    background-image: url(/pagina/img/pexels-max-andrey-1068989.jpg);
+    background-image: url(../img/fondopalmera.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
@@ -376,7 +376,7 @@ ul li a.FAQs,.support,.more{
 
     body {/*lo que está abajo del navegador:formato,de letra y marguen*/
         padding-top: 6em;
-        background-image: url(/pagina/img/pexels-max-andrey-1068989.jpg);
+        background-image: url(../img/fondopameraiphone.jpg);
         background-repeat: no-repeat;
         flex-wrap: wrap;
     }
