@@ -412,7 +412,7 @@ ul li a.FAQs,.support,.more{
         overflow-y:auto; /*Movimiento a de up, a down*/
         display: block;
         text-align: center;
-        left: 100%;
+        left: 0%;
         transition: left 0.3s;
     }
 
@@ -482,7 +482,7 @@ ul li a.FAQs,.support,.more{
         display: block;
     }
     .nav-menu_visible{
-        left: 0em;
+        left: 100%;
         
     }
     .nav-boton:focus:not(:focus-visible) {
