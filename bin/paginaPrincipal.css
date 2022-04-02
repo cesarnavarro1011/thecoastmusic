@@ -376,7 +376,7 @@ ul li a.FAQs,.support,.more{
 
     body {/*lo que está abajo del navegador:formato,de letra y marguen*/
         padding-top: 6em;
-        background-image: url(../img/img-cuenta);
+        background-image: url(../img/fondopalmeraihpone.jpg);
         background-repeat: no-repeat;
         flex-wrap: wrap;
     }
