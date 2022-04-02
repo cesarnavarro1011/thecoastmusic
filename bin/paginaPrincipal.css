@@ -394,7 +394,7 @@ ul li a.FAQs,.support,.more{
         position: relative;
         width:100%;
         left:4em;
-        margin-right: -3%;
+        margin-right: -3em;
     }
     .nav-menu {/*Herramientas General:  separar del lado cuerpo,quitar puntos de lista*/
         flex-direction: column;/*columna*/
