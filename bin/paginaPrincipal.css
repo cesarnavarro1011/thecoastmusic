@@ -10,7 +10,7 @@ body {/*lo que está abajo del navegador:formato,de letra y marguen*/
     font-family: sans-serif;
     background:rgb(255, 255, 255);
     padding: 6em 1em 0em;
-    background-image: url(/img/fondopalmera.jpg);
+    background-image: url(../img/fondopalmera.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     /* backdrop-filter: blur(3px) brightness(60%); */
